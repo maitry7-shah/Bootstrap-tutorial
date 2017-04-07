@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Tutorial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+  body {
+      position: relative; 
+  }
+  #section0 {padding-top:50px;min-height:400px;color: #fff; background-color: #eee;color:black;}
+  #section1 {padding-top:50px;min-height:500px;color: #fff; background-color: #405052;}
+  #section2 {padding-top:50px;min-height:500px;color: #fff; background-color: #673ab7;}
+  #section3 {padding-top:50px;min-height:500px;color: #fff; background-color: #ff9800;}
+  #section41 {padding-top:50px;min-height:500px;color: #fff; background-color: #0b2b2f;}
+  #section42 {padding-top:50px;min-height:500px;color: #fff; background-color: #9a1c4a;}
+  
+  .bor{
+
+  	border-style: solid;
+    border-width: 2px;
+  	border-color: #000000 #000000;
+
+  }
+  </style>
+
+
+  <script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+     $('#intro1').hide();  
+    $('#intro2').hide(); 
+   
+    $('#intro1').fadeIn(3000, function() {
+    $( "#intro2" ).fadeIn();
+  });
+   
+	});
+   
+
+
+
+  </script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Bootstrap Tutorial</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+         <li><a href="#section0">About</a></li>
+         
+          <li><a href="#section1">Grid Layout</a></li>
+          <li><a href="#section2">Alerts</a></li>
+         
+          <li><a href="#section3">Buttons</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Images & Glphyicons <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Images Shapes</a></li>
+              <li><a href="#section42">Glpyhicons</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+
+<div id="section0" class="container-fluid">
+<div class="container">
+<br/>
+<div>
+<br/>
+<br/>
+<div id="intro1" >
+	<h1 align="center;">Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web</h1>
+
+</div>
+
+<br/>
+<h4 id="intro2" align="center;">Learn the basic of Bootstrap framework in simple and easy steps and create your own responsive website with much less effort </h4>
+</br/>
+</div>
+</div>
+</div>
+
+<div id="section1" class="container-fluid">
+<div class="container">
+  <h1>BS Grid Layout</h1>
+  <p>Create a div(&lt;div class="row"&gt;) and add the desired number of columns (with appropriate .col-*-* classes)
+  </p>
+
+
+	
+			  <div class="row container-fluid">
+			    <div class="col-sm-1 bor" style="background-color:blue;">
+			    <p>
+			      	<br/>
+			      	col-sm-1
+			     </p>
+			    </div>
+			    <div class="col-sm-1 bor" style="background-color:blue;">
+			    <p>
+			      	<br/>
+			      	  col-sm-1
+			      </p>
+			    </div><div class="col-sm-1 bor" style="background-color:blue;">
+			    <p>
+			      	<br/>
+			      	  	col-sm-1
+			      </p>
+			    </div><div class="col-sm-1 bor" style="background-color:blue;">
+			    <p>
+			      	<br/>
+			      	  	col-sm-1
+			      </p>
+			    </div><div class="col-sm-1 bor" style="background-color:blue;">
+			    <p>
+			      	<br/>
+			      	  col-sm-1
+			      </p>
+			    </div><div class="col-sm-1 bor" style="background-color:blue;">
+			    <p>
+			      	<br/>
+			      	  col-sm-1
+			      </p>
+			    </div><div class="col-sm-1 bor" style="background-color:blue;">
+			    <p>
+			      	<br/>
+			      	  col-sm-1
+			      </p>
+			    </div><div class="col-sm-1 bor" style="background-color:blue;">
+			    <p>
+			      	<br/>
+			      	  col-sm-1
+			      </p>
+			    </div><div class="col-sm-1 bor" style="background-color:blue;">
+			    <p>
+			      	<br/>
+			      	  col-sm-1	
+			      </p>
+			    </div><div class="col-sm-1 bor" style="background-color:blue;">
+			    <p>
+			      	<br/>
+			      	  col-sm-1	
+			      </p>
+			    </div><div class="col-sm-1 bor" style="background-color:blue;">
+			    <p>
+			      	<br/>
+			      	  col-sm-1	
+			      </p>
+			    </div><div class="col-sm-1 bor" style="background-color:blue;">
+			    <p>
+			      	<br/>
+			      	col-sm-1
+			      </p>
+			    </div>
+			    </div>
+
+
+				  <div class="row container-fluid">
+				    <div class="col-sm-6 bor" style="background-color:yellow;">
+				      <p>
+				      	<br/>
+				      	col-sm-6
+				      </p>
+				    </div>
+				    <div class="col-sm-6 bor" style="background-color:pink;">
+				      <p>
+				      	<br/>
+				      	col-sm-6
+				      </p>
+				    </div>
+
+				  </div>
+
+				   <div class="row container-fluid">
+				    <div class="col-sm-2 bor" style="background-color:teal;">
+				     <p>
+				      	<br/>
+				      	col-sm-2
+				      </p>
+				    </div>
+				    <div class="col-sm-2 bor" style="background-color:midnightblue;">
+				     <p>
+				      	<br/>
+				      	col-sm-2
+				      </p>
+				    </div>
+				     <div class="col-sm-2 bor" style="background-color:cyan;">
+				      <p>
+				      	<br/>
+				      	col-sm-2
+				      </p>
+				    </div>
+				     <div class="col-sm-2 bor" style="background-color:magenta;">
+				      <p>
+				      	<br/>
+				      	col-sm-2
+				      	
+				      </p>
+				    </div>
+				     <div class="col-sm-2 bor" style="background-color:blue;">
+				    <p>
+				      	<br/>
+				      	col-sm-2
+				      </p>
+				    </div>
+
+				     <div class="col-sm-2 bor" style="background-color:grey;">
+				      <p>
+				      	<br/>
+				      	col-sm-2
+				      </p>
+				    </div>
+				  </div>
+
+			   <div class="row container-fluid">
+			    <div class="col-sm-3 bor" style="background-color:orange;">
+			     <p>
+			      	<br/>
+			      	col-sm-3
+			      </p>
+			    </div>
+
+			    <div class="col-sm-3 bor" style="background-color:peachpuff;">
+			     <p>
+			      	<br/>
+			      	col-sm-3
+			      </p>
+			    </div>
+			    <div class="col-sm-3 bor" style="background-color:lightgreen;">
+			      <p>
+			      	<br/>
+			      	col-sm-3
+			      </p>
+			    </div>
+			    <div class="col-sm-3 bor" style="background-color:darkred;">
+			      <p>
+			      	<br/>
+			      	col-sm-3
+			      </p>
+			    </div>
+
+			    </div>
+			<div>
+			<br/>
+			  <button type="button" data-toggle="collapse" data-target="#grid" class="btn btn-info">Click to view code</button>
+			  <br/>
+			  <div id="grid" class="collapse" style="background-color:black;color:green">
+
+
+				&lt;div class="container"&gt;<br/>
+		  &lt;div class="row"&gt;<br/>
+		    &lt;div class="col-*-*"&gt;&lt;/div&gt;<br/>
+		  &lt;/div&gt;<br/>
+		  &lt;div class="row"&gt;<br/>
+		    &lt;div class="col-*-*"&gt;&lt;/div&gt;<br/>
+		    &lt;div class="col-*-*"&gt;&lt;/div&gt;<br/>
+		    &lt;div class="col-*-*"&gt;&lt;/div&gt;<br/>
+		  &lt;/div&gt;<br/>
+		  &lt;div class="row"&gt;<br/>
+		    ...<br/>
+		  &lt;/div&gt;<br/>
+		&lt;/div&gt; 
+
+
+
+	   </div>  
+	   <br/> 
+			</div>
+			  <p>
+  The Bootstrap grid system has four classes:
+
+	xs (for phones)
+	sm (for tablets)
+	md (for desktops)
+	lg (for larger desktops)
+  </p>
+  <p>
+  Grid columns are created by specifying the number of 12 available columns you wish to span <br/>
+  For example: Three equal columns would use three .col-sm-4 || Two equal columns would use two .col-sm-6 || Twelve equal columns would use twelve .col-sm-12
+  </p>
+  <br/>
+	</div>
+</div>
+
+<div id="section2" class="container-fluid">
+<div class="container">
+  <h1>Bootstrap Alerts</h1>
+  <p>Alerts are created with .alert class followed by one of the four contextual classes .alert-success, .alert-info, .alert-warning or .alert-danger</p>
+<br/>
+
+  <div class="alert alert-success alert-dismissable fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong> Please enter your fullname.
+  </div>
+  <div class="alert alert-info alert-dismissable fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Info!</strong> The appointment has been scheduled.
+  </div>
+  <div class="alert alert-warning alert-dismissable fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Warning!</strong> Warning! The due date is approaching.
+  </div>
+  <div class="alert alert-danger alert-dismissable fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+  </div>
+   <div class="alert alert-success">
+    <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-info">
+    <strong>Info!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+
+  <button type="button" data-toggle="collapse" data-target="#demoalert" class="btn btn-info">Click to view code</button> 
+
+       <div id="demoalert" class="collapse" style="background-color:black;color:green">
+
+
+        &lt;div class="alert alert-info"&gt;<br/>
+       &lt;strong&gt;Info!&lt;/strong&gt; You should &lt;a href="#" class="alert-link"&lgt;read this message&lt;/a&gt;.<br/>
+       &lt;/div&gt;<br/>
+
+
+	   </div>   
+
+</div>
+<br/>
+</div>
+
+<div id="section3" class="row ontainer-fluid" >
+  
+<div class="container">
+  <h1>Bootstrap Buttons</h1>
+  <p>Bootstrap provides various styles of buttons with different sizes </p>      
+   <br/>
+   <h4>Button Styles </h4>
+   <p>btn-default, btn-primary , btn-success, btn-info, btn-warning and btn-danger are the classes that can add styles to your buttons</p>
+   <br/>
+  <div class="row">
+    <div class="col-sm-6" ">
+        <button type="button" class="btn" data-toggle="tooltip" title="class=&rdquo;btn&rdquo;">Basic</button>
+		<button type="button" class="btn btn-default"  data-toggle="tooltip" title="class=&rdquo;btn btn-default&rdquo;">Default</button>
+		<button type="button" class="btn btn-primary"  data-toggle="tooltip" title="class=&rdquo;btn btn-primary&rdquo;">Primary</button>
+		<button type="button" class="btn btn-success"  data-toggle="tooltip" title="class=&rdquo;btn btn-success&rdquo;">Success</button>
+		<button type="button" class="btn btn-info" data-toggle="tooltip" title="class=&rdquo;btn btn-info&rdquo;">Info</button>
+		<button type="button" class="btn btn-warning"  data-toggle="tooltip" title="class=&rdquo;btn btn-warning&rdquo;">Warning</button>
+		<button type="button" class="btn btn-danger" data-toggle="tooltip" title="class=&rdquo;btn btn-danger&rdquo;">Danger</button>
+		<br/>
+		
+
+    </div>
+    
+    <div class="col-sm-6" ">
+      <button type="button" data-toggle="collapse" data-target="#demo" class="btn btn-info">Click to view code</button> 
+      <span id="help" data-toggle="tooltip" title="Bootstrap has the following classes 1) .btn &NewLine;   
+2) .btn-default &NewLine;
+3) .btn-primary &NewLine;
+4) .btn-success &NewLine;
+5) .btn-info &NewLine;
+6) .btn-warning &NewLine;
+7) .btn-danger &NewLine;
+8) .btn-link" class="glyphicon glyphicon-exclamation-sign" ></span>
+
+       <div id="demo" class="collapse" style="background-color:black;color:green">
+
+
+		&lt;button type="button" class="btn btn-default"&gt;Default&lt;/button&gt;<br/>
+		&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;<br/>
+		&lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;<br/>
+		&lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;<br/>
+		&lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;<br/>
+		&lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;<br/>
+
+
+
+
+	   </div>   
+	 
+
+    </div>
+
+    
+  </div>
+
+<hr>
+<br/>
+   <br/>
+<h4>Button Sizes</h4>
+<p>btn-lg, btn-sm, btn-xs, diabled, navbar-btn class changes the size of the buttons</p>
+<div class="row">
+    <div class="col-sm-6" ">
+       &nbsp;
+		<button type="button" class="btn" data-toggle="tooltip" title="class=&rdquo;btn&rdquo;">Basic</button>
+		<button type="button" class="btn btn-lg btn-success" data-toggle="tooltip" title="class=&rdquo;btn btn-lg&rdquo;">Green</button>
+		<button type="button" class="btn btn-sm btn-success" data-toggle="tooltip" title="class=&rdquo;btn btn-sm&rdquo;">Green</button>
+		<button type="button" class="btn btn-xs btn-success" data-toggle="tooltip" title="class=&rdquo;btn btn-xs&rdquo;">Green</button>
+		<button type="button" class="btn disabled btn-success" data-toggle="tooltip" title="class=&rdquo;btn disabled&rdquo;">Green</button>
+		<button type="button" class="btn navbar-btn btn-success" data-toggle="tooltip" title="class=&rdquo;btn navbar-btn&rdquo;">Green</button>
+		<br/>
+		
+
+    </div>
+    
+    <div class="col-sm-6" ">
+      <button type="button" data-toggle="collapse" data-target="#buttonsize" class="btn btn-info">Click to view code</button> 
+	 <span id="help" data-toggle="tooltip" title="Bootstrap has the following classes 1) .btn &NewLine;   
+	2) .btn-lg &NewLine;
+	3) .btn-sm &NewLine;
+	4) .btn-xs &NewLine;
+	5) .btn-disabled &NewLine;
+	6) .navbar-btn &NewLine;" class="glyphicon glyphicon-exclamation-sign" ></span>
+       <div id="buttonsize" class="collapse" style="background-color:black;color:green">
+
+
+        &lt;button type="button" class="btn"&gt;Basic&lt;/button&gt; <br/>
+		&lt;button type="button" class="btn btn-lg"&gt;Default&lt;/button&gt;<br/>
+		&lt;button type="button" class="btn btn-sm"&gt;Primary&lt;/button&gt;<br/>
+		&lt;button type="button" class="btn btn-xs"&gt;Success&lt;/button&gt;<br/>
+		&lt;button type="button" class="btn btn-disabled"&gt;Info&lt;/button&gt;<br/>
+		&lt;button type="button" class="btn navbar-btn"&gt;Warning&lt;/button&gt;<br/>
+
+
+	   </div>   
+    </div>
+
+  </div>
+<hr>
+<br/>
+   <br/>
+	<div class="row">
+    <div class="col-sm-6" ">
+     
+    	<div class="btn-group">
+		  <button type="button" class="btn btn-primary">Colors</button>
+		  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+		    <span class="caret"></span>
+		  </button>
+		  <ul class="dropdown-menu" role="menu">
+		    <li><a >Blue</a></li>
+		    <li><a>Red</a></li>
+		  </ul>
+		  	
+		</div>
+
+
+	
+
+    </div>
+    
+    <div class="col-sm-6" ">
+      <button type="button" data-toggle="collapse" data-target="#buttondropdown" class="btn btn-info">Click to view code</button> 
+	 <span id="help" data-toggle="tooltip" title="Bootstrap has the following classes 1) .btn-primary &NewLine;   
+	2) dropdown-toggle &NewLine;" class="glyphicon glyphicon-exclamation-sign" ></span>
+
+
+       <div id="buttondropdown" class="collapse" style="background-color:black;color:green">
+
+       &lt;div class="btn-group"&gt; <br/>
+		  &lt;button type="button" class="btn btn-primary">Colors&lt;/button&gt; <br/>
+		  &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt; <br/>
+		    &lt;span class="caret"&gt;&lt;/span&gt; <br/>
+		  &lt;/button&gt; <br/>
+		  &lt;ul&gt; class="dropdown-menu" role="menu"&gt; <br/>
+		    &lt;li&gt;&lt;a >Blue&lt;/a&gt;&lt;/li&gt; <br/>
+		    &lt;li&gt;&lt;a >Red&lt;/a&gt;&lt;/li&gt; <br/>
+		  &lt;/ul&gt; <br/>
+		&lt;/div&gt; <br/>
+
+
+	   </div>  
+	   <br/> 
+    </div>
+
+  </div>
+<br/>
+</div>
+
+
+</div>
+
+
+<div id="section41" class="container-fluid">
+<div class="container">
+  <h1>BS Image Shapes</h1>
+  <br/>
+  <br/>
+  <div class="row container-fluid">
+  <div class="col-sm-6">
+  <br/>
+  <h4>Bootstrap adds shapes to images by adding a class to the &lt;img&gt; tag</h4>
+  <br/>
+  
+  <h5>Responsive images automatically adjust to fit the size of the screen. You can create responsive images by adding an .img-responsive class to the <img> tag. The image will then scale nicely to the parent element.</h5>
+  <br/>
+  <p>Try it yourself:&nbsp;  &lt;img src="img/giphy.gif" class="img-rounded" alt="giphy" width="200" height="236"&gt;</p>
+  </div>
+   <div class="col-sm-6" >
+  <table style="width:300px;background:black;color:green;align:left" class="table table-hover table-bordered container">
+    <thead>
+      <tr>
+        <th>Class</th>
+        <th>Description</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>.img-responsive</td>
+        <td>Makes an image responsive</td>
+    
+    </tr>
+      <tr>
+        <td>.img-rounded</td>
+        <td>Adds rounded corners to an image</td>
+       
+      </tr>
+      <tr>
+        <td>.img-circle</td>
+        <td>Shapes the image to a circle</td>
+        
+      </tr>
+      <tr>
+        <td>.img-thumbnail</td>
+        <td>Shapes the image to a thumbnail</td>
+        
+      </tr>
+
+      <tr>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  
+  </div>
+
+<br/>
+  
+
+  <div class="row container-fluid">
+   <div class="col-sm-4 center" >
+   <img src="img/giphy.gif" class="img-rounded" alt="giphy" width="200" height="236"> <br/>
+   Rounded edges
+   </div>
+   <div class="col-sm-4" >
+   <img src="img/gears.gif" class="img-circle" alt="gears" width="200" height="236"><br/>
+    Circle 
+   </div>
+
+    <div class="col-sm-4" >
+   <img src="img/mask.gif" class="img-thumbnail" alt="mask" width="300" style="height:245px" ><br/>
+   Thumbnail
+   </div>
+  </div>
+
+
+  
+	<br/>
+  <br/>
+<div class="row container-fluid">
+   <div class="col-sm-4" >
+         <button type="button" data-toggle="collapse" data-target="#round" class="btn btn-info">Click to view code</button> 
+   
+         <div id="round" class="collapse" style="background-color:black;color:green">
+
+
+		    &lt;img src="img/giphy.gif" class="img-rounded img-responsive" alt="giphy" width="200" height="436"&gt;
+
+	   </div>   
+
+   </div>
+    
+   <div class="col-sm-4" >
+        <button type="button" data-toggle="collapse" data-target="#circle" class="btn btn-info">Click to view code</button> 
+      	
+      	 <div id="circle" class="collapse" style="background-color:black;color:green">
+
+		    &lt;img src="img/gears.gif" class="img-circle img-responsive" alt="gears" width="200" height="436"&gt;
+	   </div>   
+
+
+   </div>
+    
+    <div class="col-sm-4" >
+        <button type="button" data-toggle="collapse" data-target="#thumbnail" class="btn btn-info">Click to view code</button> 
+      
+         <div id="thumbnail" class="collapse" style="background-color:black;color:green">
+
+		
+		    &lt;img src="img/mask.gif" class="img-thumbnail img-responsive" alt="mask" width="200" height="436"&gt;
+	   </div>   
+
+   </div>
+   
+  </div>
+<br/>
+</div>
+
+</div>
+<div id="section42" class="container-fluid">
+<div class="container">
+  <h1>BS Glpyhicons </h1>
+  <p>Bootstrap includes 260 glyphs from the Glyphicon Halflings set which can be used in text, buttons, toolbars, navigation, or forms</p>
+  <p>Example:&nbsp; &lt;span class="glyphicon glyphicon-envelope"&gt;&lt;/span&gt;</p>
+  <br/>
+<br/>
+  <div row="class">
+  <div class="col-sm-2"> 
+  <span class="glyphicon  glyphicon-signal" data-toggle="tooltip" title="glyphicon glyphicon-signal"></span>
+  </div>
+   <div class="col-sm-2"> 
+  <span class="glyphicon  glyphicon-headphones" data-toggle="tooltip" title="glyphicon glyphicon-headphones"></span>
+  </div>
+   <div class="col-sm-2"> 
+  <span class="glyphicon glyphicon-indent-right" data-toggle="tooltip" title="glyphicon glyphicon-indent-right"></span>
+  </div>
+   <div class="col-sm-2"> 
+  <span class="glyphicon glyphicon-envelope" data-toggle="tooltip" title="glyphicon glyphicon-envelope"></span>
+  </div>
+   <div class="col-sm-2"> 
+   <span class="glyphicon glyphicon-facetime-video" data-toggle="tooltip" title="glyphicon glyphicon-facetime-video"></span>
+  </div>
+   <div class="col-sm-2"> 
+   <span class="glyphicon  glyphicon-picture" data-toggle="tooltip" title="glyphicon glyphicon-picture"></span>
+  </div>
+  </div>
+
+
+<br/>
+<br/>
+
+
+  <div row="class">
+  <div class="col-sm-2"> 
+  <span class="glyphicon glyphicon  glyphicon-map-marker" data-toggle="tooltip" title="glyphicon glyphicon-map-marker"></span>
+  </div>
+   <div class="col-sm-2"> 
+  <span class=" glyphicon glyphicon-tint" data-toggle="tooltip" title="glyphicon glyphicon-tint"></span>
+  </div>
+   <div class="col-sm-2"> 
+  <span class=" glyphicon glyphicon-edit" data-toggle="tooltip" title="glyphicon glyphicon-edit"></span>
+  </div>
+   <div class="col-sm-2"> 
+  <span class=" glyphicon glyphicon-share" data-toggle="tooltip" title="glyphicon glyphicon-share"></span>
+  </div>
+   <div class="col-sm-2"> 
+  <span class=" glyphicon glyphicon-adjust" data-toggle="tooltip" title="glyphicon glyphicon-adjust"></span>
+  </div>
+   <div class="col-sm-2"> 
+  <span class="  glyphicon glyphicon-glass" data-toggle="tooltip" title="glyphicon glyphicon-glass"></span>
+  </div>
+  </div>
+
+
+<br/>
+<br/>
+
+
+  <div row="class">
+  <div class="col-sm-2"> 
+  <span class="glyphicon glyphicon-off" data-toggle="tooltip" title="glyphicon glyphicon-off"></span>
+  </div>
+   <div class="col-sm-2"> 
+   <span class="glyphicon glyphicon-film" data-toggle="tooltip" title="glyphicon glyphicon-film"></span>
+  </div>
+   <div class="col-sm-2"> 
+  <span class="glyphicon glyphicon-star-empty" data-toggle="tooltip" title="glyphicon glyphicon-star-empty"></span>
+  </div>
+   <div class="col-sm-2"> 
+   <span class=" glyphicon glyphicon-heart" data-toggle="tooltip" title="glyphicon glyphicon-heart"></span>
+  </div>
+   <div class="col-sm-2"> 
+    <span class=" glyphicon glyphicon-search" data-toggle="tooltip" title="glyphicon glyphicon-search"></span>
+  </div>
+   <div class="col-sm-2"> 
+   <span class=" glyphicon glyphicon-star" data-toggle="tooltip" title="glyphicon glyphicon-star"></span>
+  </div>
+  </div>
+<br/>
+<br/>
+
+
+  <div row="class">
+  <div class="col-sm-2"> 
+  <span class="glyphicon glyphicon-home" data-toggle="tooltip" title="glyphicon glyphicons-home"></span>
+  </div>
+   <div class="col-sm-2"> 
+   <span class="glyphicon glyphicon-magnet" data-toggle="tooltip" title="glyphicon glyphicon-magnet"></span>
+  </div>
+   <div class="col-sm-2"> 
+  <span class="glyphicon glyphicon-upload" data-toggle="tooltip" title="glyphicon glyphicon-upload"></span>
+  </div>
+   <div class="col-sm-2"> 
+   <span class=" glyphicon glyphicon-volume-off
+" data-toggle="tooltip" title="glyphicon glyphicon-volume-off
+"></span>
+  </div>
+   <div class="col-sm-2"> 
+    <span class=" glyphicon glyphicon-remove-sign" data-toggle="tooltip" title="glyphicon glyphicon-remove-sign"></span>
+  </div>
+   <div class="col-sm-2"> 
+   <span class=" glyphicon glyphicon-leaf" data-toggle="tooltip" title="glyphicon glyphicon-leaf"></span>
+  </div>
+  </div>
+
+
+<br/>
+<br/>
+
+
+  <div row="class">
+  <div class="col-sm-2"> 
+  <span class="glyphicon glyphicon-cutlery" data-toggle="tooltip" title="glyphicon glyphicons-cutlery"></span>
+  </div>
+   <div class="col-sm-2"> 
+   <span class="glyphicon glyphicon-earphone" data-toggle="tooltip" title="glyphicon glyphicon-earphone"></span>
+  </div>
+   <div class="col-sm-2"> 
+  <span class="glyphicon glyphicon-sound-dolby" data-toggle="tooltip" title="glyphicon glyphicon-sound-dolby"></span>
+  </div>
+   <div class="col-sm-2"> 
+   <span class=" glyphicon glyphicon-copy
+" data-toggle="tooltip" title="glyphicon glyphicon-copy
+"></span>
+  </div>
+   <div class="col-sm-2"> 
+    <span class=" glyphicon glyphicon-scissors" data-toggle="tooltip" title="glyphicon glyphicon-scissors"></span>
+  </div>
+   <div class="col-sm-2"> 
+   <span class=" glyphicon glyphicon-grain" data-toggle="tooltip" title="glyphicon glyphicon-grain"></span>
+  </div>
+  </div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+
+</body>
+</html>
